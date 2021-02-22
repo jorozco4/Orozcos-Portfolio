@@ -2,7 +2,13 @@ body {
   background-color: whitesmoke;
 }
 h1 {
-  color: white;
+  color: black;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+}
+h2 {
+  color: black;
 }
 
 .patterns {
@@ -14,11 +20,6 @@ header {
   background-color: black;
 }
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #333;
   font-size: 20px;
   text-decoration: underline;
@@ -26,7 +27,7 @@ nav ul {
 
 nav a {
   color: white;
-  background-color:black);
+  background-color: black;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -45,4 +46,9 @@ nav a:hover {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 200px;
 }
