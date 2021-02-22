@@ -3,8 +3,10 @@ body {
 }
 h1 {
   color: black;
-  bottom: 20px;
-  right: 20px;
+  padding: 3;
+  padding-right: 2;
+  /* bottom: 20px;
+  right: 10px; */
   background-color: white;
 }
 h2 {
@@ -41,7 +43,9 @@ nav {
 nav div {
   font-size: 20px;
   text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  background-color: white;
 }
 
 /* nav links change color when you hove over it */
@@ -60,8 +64,28 @@ nav a:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+section {
+  height: 200px;
+}
 .vl {
   border-left: 6px solid black;
   height: 200px;
+  margin-left: 15%;
+}
+p {
+  text-align: left;
+}
+
+.tag1 {
+  color: rgb(235, 233, 233);
+  background-color: black;
+  font-size: 34px;
+  float: left;
+}
+
+.tag2 {
+  color: rgb(235, 233, 233);
+  background-color: black;
+  font-size: 34px;
+  float: left;
 }
