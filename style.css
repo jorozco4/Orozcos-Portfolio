@@ -14,24 +14,37 @@ h2 {
 .patterns {
   object-fit: cover;
 }
+
+/* contains branding and navlinks */
 header {
-  align-items: center;
+  justify-content: space-between;
   display: flex;
   background-color: black;
+  min-width: 100%;
 }
-nav ul {
-  background-color: #333;
+
+/* This is the branding and logo */
+header h1 {
+  flex: 1;
+}
+
+/* This contains nav links */
+nav {
+  background-color: black;
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+/* These are the nav link */
+nav div {
   font-size: 20px;
   text-decoration: underline;
+  display: flex;
 }
 
-nav a {
-  color: white;
-  background-color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
+/* nav links change color when you hove over it */
 nav a:hover {
   background-color: black;
 }
