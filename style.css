@@ -1,11 +1,12 @@
 body {
   background-color: whitesmoke;
 }
+
 h1 {
-  color: black;
+  color: rgb(235, 233, 233);
   bottom: 20px;
   left: 10px;
-  background-color: rgb(235, 233, 233);
+  background-color: black;
 }
 
 .name {
@@ -31,29 +32,34 @@ header {
 }
 
 /* This is the branding and logo */
-header h1 {
+/* header h1 {
   flex: 1;
-}
+  
+ 
+} */
 
 /* This contains nav links */
 nav {
-  background-color: black;
   flex: 2;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   padding-left: 100px;
+  margin-left: 200px;
+  margin-bottom: 20px;
 }
 
 /* These are the nav link */
 nav li {
-  color: black;
   font-size: 20px;
   text-decoration: underline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  background-color: white;
+  margin-top: 50px;
+  border: 4px solid rgb(235, 233, 233);
+  color: rgb(235, 233, 233);
 }
+  
 
 /* nav links change color when you hove over it */
 nav a:hover {
@@ -77,41 +83,50 @@ nav a:hover {
   color: white;
   background-color: rgb(64, 64, 64);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1%;
+  padding: 2%;
   margin-top: 3%;
   margin-bottom: 3%;
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #box2 {
   background-color: rgb(64, 64, 64);
+  padding-right: 20%; 
 }
 
 #box3 {
   background-color: rgb(64, 64, 64);
+  padding-right: 20%;
 }
 
+/* This contains the vertical lines */
 .vl {
   border-left: 6px solid black;
   height: 100px;
-  margin-left: 15%;
-  padding: 4%;
+  margin-right: 10%;
+  padding-left: 10%;
 }
+
 .vl2 {
   border-left: 6px solid black;
-  height: 300px;
+  height: 700px;
   margin-left: 15%;
 }
+
 .vl3 {
   border-left: 6px solid black;
   height: 200px;
   margin-left: 15%;
 }
-
+/* This containts the h1 headings */
 .tag1 {
   color: rgb(235, 233, 233);
   background-color: black;
-  font-size: 34px;
+  font-size: 28px;
   float: left;
+  margin-right: 20px;
 }
 
 .tag2 {
@@ -119,26 +134,42 @@ nav a:hover {
   background-color: black;
   font-size: 34px;
   float: left;
+  margin-top:100px;
+  margin-left: 30px;
+}
+/* This contains the format for the images on section 2 */
+
+.column {
+  float: left;
+  width: 25%;
+  margin-top: 1%;
+  padding: 8px;
 }
 
-.mywork {
+.column2 {
   float: right;
-  height: 200px;
-  width: 200px;
+  justify-content: space-evenly;
+  max-width: 25%;
+  padding: 10px 50px 20px;
 }
+
+.column3 {
+  float:inherit;
+  max-width: 20%;
+  padding-bottom: 10%;
+  padding-right: 10%;
+  padding: 10px 10px;
+}
+
+/* This containts the h1 headings */
 
 .tag3 {
   color: rgb(235, 233, 233);
   background-color: black;
   font-size: 24px;
   float: left;
-}
-
-.tag4 {
-  color: rgb(235, 233, 233);
-  background-color: black;
-  font-size: 24px;
-  float: left;
+  margin-top: 70px;
+  margin-left: 10px;
 }
 
 div ul {
@@ -147,5 +178,11 @@ div ul {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  padding: 15%;
+  padding: 7%;
+  list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
