@@ -1,6 +1,3 @@
-body {
-  background-color: whitesmoke;
-}
 
 h1 {
   color: rgb(235, 233, 233);
@@ -9,66 +6,50 @@ h1 {
   background-color: black;
 }
 
-.name {
-  padding: left;
-}
-
 h2 {
   color: black;
 }
 
-.patterns {
-  object-fit: cover;
+
+body {
+  background-color: whitesmoke;
 }
 
-/* contains branding and navlinks */
-header {
-  justify-content: space-between;
-  display: flex;
-  background-color: black;
-  align-items: center;
-  padding: 1%;
-  /* min-width: 100%; */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
+.topnav h1 {
+    float: left;
+    font-size: 40px;
+    color: white;
+    padding: 1px 5%;
+  }
 
-/* This is the branding and logo */
-/* header h1 {
-  flex: 1;
-  
- 
-} */
-
-/* This contains nav links */
-nav {
-  flex: 2;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  padding-left: 100px;
-  margin-left: 200px;
-  margin-bottom: 20px;
-}
-
-/* These are the nav link */
-nav li {
-  font-size: 20px;
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: underline;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  margin-top: 50px;
-  border: 4px solid rgb(235, 233, 233);
-  color: rgb(235, 233, 233);
+  margin: 3%;
+  padding:10px 10px;
+  font-size: 20px;
 }
-  
 
-/* nav links change color when you hove over it */
-nav a:hover {
-  background-color: black;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .container {
   position: relative;
 }
+
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -79,7 +60,11 @@ nav a:hover {
   padding-right: 20px;
 }
 
-#box1 {
+.line-patterns {
+  object-fit: cover;
+}
+
+#about-me {
   color: white;
   background-color: rgb(64, 64, 64);
   font-family: Arial, Helvetica, sans-serif;
@@ -91,12 +76,12 @@ nav a:hover {
   justify-content: space-evenly;
 }
 
-#box2 {
+#work {
   background-color: rgb(64, 64, 64);
   padding-right: 20%; 
 }
 
-#box3 {
+#contact-me {
   background-color: rgb(64, 64, 64);
   padding-right: 20%;
 }
