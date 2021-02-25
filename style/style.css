@@ -1,28 +1,32 @@
-
-h1 {
-  color: rgb(235, 233, 233);
-  bottom: 20px;
-  left: 10px;
-  background-color: black;
-}
-
 h2 {
   color: black;
 }
 
-
 body {
   background-color: whitesmoke;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.section-container-content {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
 }
 
 .topnav {
   background-color: #333;
   overflow: hidden;
 }
+
 .topnav h1 {
     float: left;
     font-size: 40px;
-    color: white;
+    color: rgb(235, 233, 233);
+    background-color: black;
     padding: 1px 5%;
   }
 
@@ -39,11 +43,6 @@ body {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
 }
 
 .container {
@@ -64,11 +63,9 @@ body {
   object-fit: cover;
 }
 
-#about-me {
-  color: white;
+.section-container {
   background-color: rgb(64, 64, 64);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 2%;
+  padding: 3%;
   margin-top: 3%;
   margin-bottom: 3%;
   flex: 2;
@@ -76,28 +73,33 @@ body {
   justify-content: space-evenly;
 }
 
+
+
 #work {
   background-color: rgb(64, 64, 64);
-  padding-right: 20%; 
+  padding: 3%;
+  /* margin-top: 3%;
+  margin-bottom: 3%; */
+  
 }
 
 #contact-me {
   background-color: rgb(64, 64, 64);
-  padding-right: 20%;
+  padding-right: 10%;
+  font-size: 20px;
 }
 
-/* This contains the vertical lines */
+/* This section contains the vertical lines */
 .vl {
   border-left: 6px solid black;
   height: 100px;
-  margin-right: 10%;
-  padding-left: 10%;
+  margin-right: 8px;
 }
 
 .vl2 {
   border-left: 6px solid black;
   height: 700px;
-  margin-left: 15%;
+
 }
 
 .vl3 {
@@ -105,13 +107,16 @@ body {
   height: 200px;
   margin-left: 15%;
 }
-/* This containts the h1 headings */
+/* This contains the h1 headings for each section */
 .tag1 {
   color: rgb(235, 233, 233);
   background-color: black;
   font-size: 28px;
   float: left;
-  margin-right: 20px;
+}
+
+.section-container-title {
+  flex: 1;
 }
 
 .tag2 {
@@ -119,55 +124,74 @@ body {
   background-color: black;
   font-size: 34px;
   float: left;
-  margin-top:100px;
-  margin-left: 30px;
+  /* margin-top:100px;
+  margin-right: 30px; */
 }
-/* This contains the format for the images on section 2 */
-
-.column {
-  float: left;
-  width: 25%;
-  margin-top: 1%;
-  padding: 8px;
-}
-
-.column2 {
-  float: right;
-  justify-content: space-evenly;
-  max-width: 25%;
-  padding: 10px 50px 20px;
-}
-
-.column3 {
-  float:inherit;
-  max-width: 20%;
-  padding-bottom: 10%;
-  padding-right: 10%;
-  padding: 10px 10px;
-}
-
-/* This containts the h1 headings */
-
 .tag3 {
   color: rgb(235, 233, 233);
   background-color: black;
-  font-size: 24px;
   float: left;
   margin-top: 70px;
-  margin-left: 10px;
+  max-width: 100%;
+}
+
+/* This contains the format for the images on section 2 */
+.image-row {
+  display: flex;
+  justify-content: stretch;
+}
+
+
+/* .column {
+  float:left;
+  width: 33.3%;
+  padding: 10px;
+  
+}
+.column2 {
+  float: right;
+  margin-left: 30%;
+  width: 30%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+}
+
+.column3 {
+  float: inline-end;
+  width: 30%;
+  padding-left: 2%;
+} */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li a {
+  color: white;
+
 }
 
 div ul {
-  font-size: larger;
-  flex: 2;
+  font-size: 30px;
+  flex: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-end;
-  padding: 7%;
+  padding: 10%;
   list-style-type: none;
+  max-width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
+  @media screen and (max-width: 550px) {
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 550px) {
+      .topnav {
+        background: #772014;
+      }
