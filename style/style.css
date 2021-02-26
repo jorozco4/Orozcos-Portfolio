@@ -73,16 +73,43 @@ body {
 
 /* This contains the format for the images on section 2 */
 .image-row {
-  display: flex;
-  justify-content: stretch;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+  float: left;
+  width: 34%;
+  padding: 45px;
+  margin-left: 5%;
+  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-block-1 {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
-.image-row-2 {
-  float: inline-end;
-  width: 33.3%;
-
+ /* .image-row-2 {
+   position: bottom right;
+   float:right;
 }
+
+div .image-row-3 {
+  float:left;
+} */
 
 p {
   color: white;
@@ -98,7 +125,7 @@ p {
 
 .vertical-line-2 {
   border-left: 6px solid white;
-  height: 1300px;
+  height: 700px;
 }
 
 .vertical-line-3 {
@@ -152,4 +179,3 @@ div ul {
           background: lightskyblue;
           color: white;
         }
-  
