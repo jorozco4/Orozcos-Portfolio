@@ -3,11 +3,6 @@ body {
   background-color:rgb(239, 237, 219);
 }
 
-p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  }
-
 .topnav {
   background-color: rgb(239, 237, 219);
   overflow: hidden;
@@ -42,7 +37,6 @@ p {
   display: flex;
   flex: 2;
   flex-direction: column;
-
 }
 
 .text-block {
@@ -55,6 +49,7 @@ p {
   padding-right: 20px;
 }
 
+/* All sections formats are located here */
 .section-container {
   background-color: lightskyblue;
   padding: 3%;
@@ -65,6 +60,7 @@ p {
   justify-content: space-evenly;
 }
 
+/* Any changes or modifications on the content of the section will be found or made here. */
 .section-container-content {
   display: flex;
   flex: 4;
@@ -75,18 +71,23 @@ p {
   flex: 1;
 }
 
-/* #work {
-  background-color: rgb(64, 64, 64);
-  padding: 3%;
-
-  
+/* This contains the format for the images on section 2 */
+.image-row {
+  display: flex;
+  justify-content: stretch;
 }
 
-#contact-me {
-  background-color: rgb(64, 64, 64);
-  padding-right: 10%;
-  font-size: 20px;
-} */
+
+.image-row-2 {
+  float: inline-end;
+  width: 33.3%;
+
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
 
 /* This section contains the vertical lines */
 .vertical-line {
@@ -97,15 +98,14 @@ p {
 
 .vertical-line-2 {
   border-left: 6px solid white;
-  height: 700px;
-
+  height: 1300px;
 }
 
 .vertical-line-3 {
   border-left: 6px solid white;
-  height: 200px;
-  
+  height: 200px; 
 }
+
 /* This contains the h1 headings for each section */
 .tag1 {
   color: white;
@@ -117,53 +117,15 @@ p {
   color: white;
   font-size: 34px;
   float: left;
-  /* margin-top:100px;
-  margin-right: 30px; */
 }
 .tag3 {
   color: white;
   float: left;
-  /* margin-top: 70px;
-  max-width: 100%; */
-}
-
-/* This contains the format for the images on section 2 */
-.image-row {
-  display: flex;
-  justify-content: stretch;
-}
-
-
-/* .column {
-  float:left;
-  width: 33.3%;
-  padding: 10px;
-  
-}
-.column2 {
-  float: right;
-  margin-left: 30%;
-  width: 30%;
-  padding-bottom: 1%;
-  padding-left: 3%;
-}
-
-.column3 {
-  float: inline-end;
-  width: 30%;
-  padding-left: 2%;
-} */
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  font-size: 34px;
 }
 
 li a {
   color: white;
-
-
 }
 
 div ul {
@@ -182,5 +144,12 @@ div ul {
 
     @media screen and (max-width: 550px) {
       .topnav {
-        background: #772014;
+        background: white;
       }
+
+      @media screen and (max-width: 550px) {
+        .text-block {
+          background: lightskyblue;
+          color: white;
+        }
+  
