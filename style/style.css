@@ -9,12 +9,12 @@ body {
 }
 
 .topnav h1 {
-    float: left;
-    font-size: 40px;
-    color: white;
-    background-color: lightskyblue;
-    padding: 1px 5%;
-  }
+  float: left;
+  font-size: 40px;
+  color: white;
+  background-color: lightskyblue;
+  padding: 1px 5%;
+}
 
 .topnav a {
   float: right;
@@ -33,12 +33,16 @@ body {
   color: black;
 }
 
+/* This section contains My image */
 .container {
   position: relative;
   background-color: lightskyblue;
   display: flex;
   flex: 2;
   flex-direction: column;
+  border-style: solid;
+  border-width: 5px;
+  color: lightskyblue;
 }
 
 .text-block {
@@ -51,7 +55,7 @@ body {
   padding-right: 20px;
 }
 
-/* All sections formats are located here */
+/* All section formats are located here */
 .section-container {
   background-color: lightskyblue;
   padding: 3%;
@@ -59,8 +63,12 @@ body {
   margin-bottom: 3%;
   flex: 2;
   display: flex;
-  justify-content: space-evenly;
 }
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
 
 /* Any changes or modifications on the content of the section will be found or made here. */
 .section-container-content {
@@ -84,9 +92,9 @@ body {
   width: 34%;
   padding: 45px;
   margin-left: 5%;
-  
 }
 
+/* This area contains the text in the image */
 .img-container {
     position: relative;
     text-align: center;
@@ -95,12 +103,6 @@ body {
     font-size: 24px;
     border-style: solid;
     border-width: 5px;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
 }
 
 .img-container-2 {
@@ -113,15 +115,16 @@ body {
   border-width: 5px;
 }
 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 div .bottom-left {
   border-style: solid;
   border-width: 5px;
 }
-
-p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  }
 
 /* This section contains the vertical lines */
 .vertical-line {
@@ -145,40 +148,40 @@ p {
   color: white;
   font-size: 28px;
   float: left;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .tag2 {
   color: white;
   font-size: 34px;
   float: left;
+  border-style: solid;
+  border-width: 3px;
 }
+
 .tag3 {
   color: white;
   float: left;
   font-size: 34px;
+  border-style: solid;
+  border-width: 3px;
 }
 
 li a {
   color: white;
   border-style: solid;
-  border-width: 5px;
-  
+  border-width: 2px;
 }
 
 div ul {
   font-size: 30px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
-  
 }
-
-  @media screen and (max-width: 550px) {
-    body {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
     @media screen and (max-width: 550px) {
       .topnav {
@@ -190,3 +193,4 @@ div ul {
           background: lightskyblue;
           color: white;
         }
+     
