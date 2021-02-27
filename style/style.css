@@ -24,6 +24,8 @@ body {
   margin: 3%;
   padding:10px 10px;
   font-size: 20px;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .topnav a:hover {
@@ -85,31 +87,36 @@ body {
   
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-style: solid;
+    border-width: 5px;
 }
 
-.text-block-1 {
+.bottom-left {
   position: absolute;
-  bottom: 5px;
-  left: 5px;
-  background-color: black;
+  bottom: 8px;
+  left: 16px;
+}
+
+.img-container-2 {
+  position: relative;
+  text-align: center;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  border-style: solid;
+  border-width: 5px;
 }
 
-
- /* .image-row-2 {
-   position: bottom right;
-   float:right;
+div .bottom-left {
+  border-style: solid;
+  border-width: 5px;
 }
-
-div .image-row-3 {
-  float:left;
-} */
 
 p {
   color: white;
@@ -153,6 +160,9 @@ p {
 
 li a {
   color: white;
+  border-style: solid;
+  border-width: 5px;
+  
 }
 
 div ul {
@@ -161,6 +171,7 @@ div ul {
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
+  
 }
 
   @media screen and (max-width: 550px) {
